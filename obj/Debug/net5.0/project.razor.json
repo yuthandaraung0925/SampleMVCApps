@@ -15619,6 +15619,11 @@
   "RootNamespace": "SampleMVCApps",
   "Documents": [
     {
+      "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\User\\Index.cshtml",
+      "TargetPath": "Views\\User\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15636,6 +15641,11 @@
     {
       "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\User\\Delete.cshtml",
+      "TargetPath": "Views\\User\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15674,6 +15684,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\User\\AddorEdit.cshtml",
+      "TargetPath": "Views\\User\\AddorEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15681,6 +15696,11 @@
     {
       "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\SampleMVCApps\\Views\\User\\Details.cshtml",
+      "TargetPath": "Views\\User\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

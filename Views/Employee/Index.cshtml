@@ -21,14 +21,14 @@
         @foreach (Employee e in Model)
         {
             <tr>
-                <td>@e.Name</td>
+                <td>@e.EmployeeName</td>
                 <td>@e.Age</td>
                 <td>@e.Salary</td>
                 <td>@e.Department</td>
                 <td>@e.Sex</td>
-                <td><a asp-action="Update" asp-route-empname="@e.Name">Update</a></td>
+                <td><a asp-action="Update" asp-route-empname="@e.EmployeeName">Update</a></td>
                 <td>
-                    <form asp-route-empname="@e.Name" asp-action="Delete" method="post">
+                    <form asp-route-empname="@e.EmployeeName" asp-action="Delete" method="post">
                         <button type="submit">Delete</button>
                     </form>
                 </td>

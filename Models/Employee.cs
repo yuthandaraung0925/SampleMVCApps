@@ -5,7 +5,7 @@ namespace SampleMVCApps.Models{
     public class Employee
     {
         [Required(ErrorMessage = "Please enter your name")]
-        public string Name { get; set; }
+        public string EmployeeName { get; set; }
 
         [Range(16, 60, ErrorMessage = "Ages 16-60 only")]
         public int Age { get; set; }

@@ -28,7 +28,7 @@ namespace SampleMVCApps.Controllers{
 
         public IActionResult Update(string empname)
         {
-            Employee employee = Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault();
+            Employee employee = Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault();
             return View(employee);
         }
   
@@ -37,11 +37,11 @@ namespace SampleMVCApps.Controllers{
         {
             if (ModelState.IsValid)
             {
-                Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault().Age = employee.Age;
-                Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault().Salary = employee.Salary;
-                Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault().Department = employee.Department;
-                Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault().Sex = employee.Sex;
-                Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault().Name = employee.Name;
+                Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault().Age = employee.Age;
+                Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault().Salary = employee.Salary;
+                Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault().Department = employee.Department;
+                Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault().Sex = employee.Sex;
+                Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault().EmployeeName = employee.EmployeeName;
   
                 return RedirectToAction("Index");
             }
@@ -53,7 +53,7 @@ namespace SampleMVCApps.Controllers{
         [HttpPost]
         public IActionResult Delete(string empname)
         {
-            Employee employee = Repository.AllEmpoyees.Where(e => e.Name == empname).FirstOrDefault();
+            Employee employee = Repository.AllEmpoyees.Where(e => e.EmployeeName == empname).FirstOrDefault();
             Repository.Delete(employee);
             return RedirectToAction("Index");
         }
